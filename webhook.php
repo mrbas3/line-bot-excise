@@ -14,7 +14,7 @@ foreach ($request_json['events'] as $event)
 		{
 			$text = $event['message']['text'];
 			
-			$reply_message = 'ฉันได้รับ "'..'" ของคุณแล้ว!';		
+			$reply_message = 'ฉันได้รับ "'.$text.'" ของคุณแล้ว!';		
 		} 		
 	} else {
 		$reply_message = 'ฉันได้รับ Event "'.$event['type'].'" ของคุณแล้ว!';
